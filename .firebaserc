@@ -1,0 +1,13 @@
+{
+  "projects": {},
+  "targets": {
+    "portfolio-mali-erdogan": {
+      "hosting": {
+        "terminal": [
+          "terminal-subdomain"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
