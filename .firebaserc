@@ -1,5 +1,7 @@
 {
-  "projects": {},
+  "projects": {
+    "default": "portfolio-mali-erdogan"
+  },
   "targets": {
     "portfolio-mali-erdogan": {
       "hosting": {
