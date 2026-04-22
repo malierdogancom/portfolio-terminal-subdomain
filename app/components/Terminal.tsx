@@ -386,15 +386,20 @@ function TypewriterText({
 
 export default function Terminal() {
     const [input, setInput] = useState('');
+    const buildInfo = process.env.NEXT_PUBLIC_BUILD_DATE
+        ? `Last deploy: ${new Date(process.env.NEXT_PUBLIC_BUILD_DATE).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}`
+        : 'Build: local';
+
     const [history, setHistory] = useState<Message[]>([
         { type: 'output', content: 'Welcome to Hacker Terminal Portfolio v2.0.0', id: 0 },
         { type: 'output', content: 'Initializing retro-futuristic interface...', id: 1 },
-        { type: 'output', content: 'Type "help" or "ls" to get started.', id: 2 },
-        { type: 'output', content: '', id: 3 },
+        { type: 'output', content: buildInfo, id: 2 },
+        { type: 'output', content: 'Type "help" or "ls" to get started.', id: 3 },
+        { type: 'output', content: '', id: 4 },
     ]);
     const [commandHistory, setCommandHistory] = useState<string[]>([]);
     const [historyIndex, setHistoryIndex] = useState(-1);
-    const messageIdCounter = useRef(4);
+    const messageIdCounter = useRef(5);
     const [completingMessages, setCompletingMessages] = useState<Set<number>>(new Set());
     const inputRef = useRef<HTMLInputElement>(null);
     const terminalEndRef = useRef<HTMLDivElement>(null);
