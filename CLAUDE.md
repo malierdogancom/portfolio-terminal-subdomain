@@ -1,10 +1,12 @@
 # CLAUDE.md — Terminal
 
 ## Proje Özeti
-Terminal temalı portfolio sitesi. `terminal.malierdogan.com` adresinde yayınlanır.
+Terminal temalı interaktif portfolio sitesi. `terminal.malierdogan.com` adresinde yayınlanır.
 - **Subdomain:** terminal.malierdogan.com
-- **GitHub Org:** github.com/malierdogancom/terminal
+- **GitHub Org:** github.com/malierdogancom/portfolio-terminal-subdomain
 - **Firebase Hosting:** `portfolio-mali-erdogan` projesi, target: `terminal` → `terminal-subdomain`
+- **Page title:** "Terminal — Mali Erdoğan"
+- **Favicon:** `app/icon.svg` (siyah zemin, yeşil `>_` prompt ikonu)
 
 ## Tech Stack
 - **Framework:** Next.js 16.0.5 (static export)
